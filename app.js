@@ -3,6 +3,8 @@ const mongoose =  require ('mongoose')
 var MongoClient = require('mongodb').MongoClient;
 const app = express()
 
+var PORT = process.env.PORT ||5050;
+
 const userSchema = require('./schema.js')
 const User = mongoose.model('user', userSchema, 'user')
 
@@ -40,4 +42,4 @@ app.get('/mongodb', function (req, res) {
 
 })
 
-app.listen(5050, ()=> {console.log('port 5050')})
+app.listen(PORT, ()=> {console.log('port 5050')})
