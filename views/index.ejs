@@ -1,0 +1,23 @@
+<html>
+<body>
+    <h2>This is data is from MongoAtlas</h2>
+
+    <table border="1">
+      <tr>
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Age </th>
+      </tr>
+
+    <% use.forEach(function(obj){ %>
+      <tr>
+      <td><%= obj.first_name %></td>
+      <td> <%= obj.last_name %> </td>
+      <td> <%= obj.Age%> </td>
+      </tr>
+<% }) %>
+
+</table>
+
+</body>
+</html>
