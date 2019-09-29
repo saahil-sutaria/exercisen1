@@ -20,7 +20,7 @@ var url2= "mongodb+srv://sahil123:sahil123@assignment1-qyulb.mongodb.net/test?re
 
 
 
-app.get('/mongodb', function (req, res) {
+app.get('/', function (req, res) {
 
   MongoClient.connect(url2, function(err, db) {
     if (err) throw err;
